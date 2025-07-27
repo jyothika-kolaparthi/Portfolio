@@ -1,184 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- EmailJS Scripts -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("24Oeelrid460v2emS");
-        })();
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Jyothika Kolaparthi — Web Developer with experience in full-stack development, AI/ML, and responsive UI design."
+    />
+    <title>Jyothika Kolaparthi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("24Oeelrid460v2emS");
+      })();
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="logo">Jyothika</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="animate-text">Welcome to My Portfolio</h1>
-            <p class="animate-text">I'm a <span class="typed-text"></span></p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
-            </div>
+      <div class="hero-content">
+        <h1 class="animate-text">Welcome to My Portfolio</h1>
+        <p class="animate-text">I'm a <span class="typed-text"></span></p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <p>Scroll Down</p>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <p>Scroll Down</p>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a passionate developer with a strong foundation in web development, databases, and AI/ML. I enjoy building efficient, scalable, and user-friendly applications, solving complex problems, and continuously learning new technologies. My expertise includes HTML, CSS, JavaScript, PHP, Python, MySQL, and AI-driven solutions.</p>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div class="skill-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Python</span>
-                        <span>MySQL</span>
-                        <span>AI/ML</span>
-                        <span>C</span>
-                        <span>Java</span>
-                        <span>SQL</span>
-                        <span>UI&UX</span>
-                    </div>
-                </div>
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I’m a dedicated developer with a strong foundation in full-stack web
+            development and a growing passion for AI and machine learning. I
+            specialize in building scalable, user-focused applications and enjoy
+            transforming complex problems into simple, elegant solutions. My
+            toolkit includes HTML, CSS, JavaScript, React, Node.js, Python, SQL,
+            and AI/ML technologies.
+          </p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>React</span><span>Node.js</span> <span>Python</span
+              ><span>MySQL</span><span>AI/ML</span><span>C</span
+              ><span>Java</span><span>SQL</span><span>UI & UX</span>
             </div>
-            <div class="about-image">
-                <div class="image-container">
-                    <img src="profile.jpg" alt="Profile Picture">
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="about-image">
+          <div class="image-container">
+            <img src="./assets/profile.jpg" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="road.jpg" alt="Road Lane Line Detection">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://github.com/jyothika-kolaparthi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Road Lane Line Detection</h3>
-                    <p>Detects lane lines in real-time using computer vision techniques and OpenCV.</p>
-                </div>
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- Add all 6 projects -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/road.jpg" alt="TrackLane" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/jyothika-kolaparthi/TrackLane"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="loan.jpg" alt="Loan Approval">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://github.com/jyothika-kolaparthi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Loan Approval</h3>
-                    <p>Predictive system to check loan eligibility using ML algorithms.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="parking.jpg" alt="Vehicle Parking Management">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://github.com/jyothika-kolaparthi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Vehicle Parking Management</h3>
-                    <p>Smart parking system to monitor and manage parking slots efficiently.</p>
-                </div>
-            </div>
+          </div>
+          <div class="project-info">
+            <h3>TrackLane</h3>
+            <p>
+              Detects road lanes in real-time using OpenCV and computer vision.
+            </p>
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/loan prediction.jpeg" alt="Loan Approval" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/jyothika-kolaparthi/Loan-Approval-Prediction"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Loan Approval System</h3>
+            <p>
+              Machine learning model that predicts loan eligibility from user
+              input.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/parking.webp" alt="Vehicle Parking Management" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/jyothika-kolaparthi" target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Smart Parking Application</h3>
+            <p>
+              Monitors parking slots in real-time with slot management features.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/image editor.png" alt="ImageLab" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/jyothika-kolaparthi/ImageLab"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ImageLab - Editor & Compressor</h3>
+            <p>
+              A responsive, web-based Image Editor and Compressor tool built
+              using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/lang translator.png" alt="LinguaBridge" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/jyothika-kolaparthi/LinguaBridge"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>LinguaBridge</h3>
+            <p>
+              A simple, user-friendly web application that helps bridge
+              communication across cultures by offering seamless language
+              translation.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/todo.png" alt="To-Do List Application " />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a
+                  href="https://github.com/jyothika-kolaparthi/python-To-Do-List"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>To-Do List Application</h3>
+            <p>
+              A Python-based command-line tool to add, edit, prioritize, and
+              manage tasks with JSON-based data persistence.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:jyothikakolaparthi@gmail.com">jyothikakolaparthi@gmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <p><a href="tel:+919177862884">+91 9177862884</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Vizag, Andhra Pradesh, India</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <p><a href="https://github.com/jyothika-kolaparthi" target="_blank">github.com/jyothika-kolaparthi</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <p><a href="https://in.linkedin.com/in/kolaparthi-jyothika-67b973304" target="_blank">linkedin.com/in/kolaparthi-jyothika-67b973304</a></p>
-                </div>
-            </div>
-            <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-            </form>
+      <h2>Let's Work Together</h2>
+      <p class="contact-subtext">
+        Have a project or opportunity in mind? Reach out and let's build
+        something great.
+      </p>
+
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jyothikakolaparthi@gmail.com"
+              >jyothikakolaparthi@gmail.com</a
+            >
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+919177862884">+91 9177862884</a>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Vizag, Andhra Pradesh, India</span>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/jyothika-kolaparthi" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/kolaparthi-jyothika-67b973304"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://leetcode.com/u/jyothika-kolaparthi/"
+              target="_blank"
+              aria-label="LeetCode"
+              class="leetcode-icon"
+              ><img src="https://cdn.simpleicons.org/leetcode" alt="LeetCode"
+            /></a>
+          </div>
         </div>
+
+        <form class="contact-form" id="contact-form">
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            placeholder="Full Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            placeholder="Professional Email"
+            required
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message or inquiry here..."
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="social-links">
-            <a href="https://github.com/jyothika-kolaparthi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://in.linkedin.com/in/kolaparthi-jyothika-67b973304" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:jyothikakolaparthi@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        </div>
-        <p>&copy; 2025 Jyothika Kolaparthi. All rights reserved.</p>
+      <p>&copy; 2025 Jyothika Kolaparthi &mdash; All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
