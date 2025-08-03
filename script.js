@@ -90,15 +90,14 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
 
+
     const templateParams = {
-        from_name: document.getElementById('user_name').value,
-        from_email: document.getElementById('user_email').value,
-        message: document.getElementById('message').value,
-        to_name: 'Jyothika Kolaparthi',
-        reply_to: document.getElementById('user_email').value
+        name: document.getElementById('user_name').value,
+        email: document.getElementById('user_email').value,
+        message: document.getElementById('message').value
     };
 
-    emailjs.send('service_portfolio', 'template_y9boe0k', templateParams)
+    emailjs.send('portfolio', 'template_i1bmqyo', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully! I will get back to you soon.');
